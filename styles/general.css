@@ -15,9 +15,8 @@ body {
 	"footer footer footer";
 	grid-column-gap: 15px;
 	grid-row-gap: 10px;
-	background: #fffccc/*#fdf6e3*/;
+	background: #fffccc;
 }
-
 header {
 	grid-area: header;
 }
@@ -50,7 +49,6 @@ header, .headnav, footer {
 	background: -moz-linear-gradient(#80533a 0%, #66402d 50%, #4d331a 50%, #332013 100%);
 	background: -ms-linear-gradient(#80533a 0%, #66402d 50%, #4d331a 50%, #332013 100%);
 }
-
 h1 {
 	grid-area: h1;
 }
@@ -71,7 +69,6 @@ h1 {
 	font-style: italic;
 	color: #fff;
 }
-
 #title1 {
 	grid-area: title1;
 }
@@ -94,16 +91,11 @@ h1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas:
-	"linkgen linkab linkcont";
+	"linkhome linkab linkcont";
 	grid-gap: 0px;
 }
-#navalt:last-child {
-	border-right: 2px solid;
-	border-right-color: #996d40;
-}
-
-#general {
-	grid-area: linkgen;
+#home {
+	grid-area: linkhome;
 }
 #about {
 	grid-area: linkab;
@@ -112,6 +104,10 @@ h1 {
 	grid-area: linkcont;
 }
 
+#navalt:last-child {
+	border-right: 2px solid;
+	border-right-color: #996d40;
+}
 .itemnavalt {
 	border-left: 2px solid;
 	border-left-color: #996d40;
@@ -198,7 +194,7 @@ input.mainnav:checked~ul.subnav1 label.subnav1, input.subnav1:checked~ul.subnav2
 	text-align: left;
 	font-size: 15pt;
 	font-weight: 500;
-	color: #80533a;
+	color: #b00000;
 }
 input.mainnav:checked~ul.subnav1 label.subnav1:hover, input.subnav1:checked~ul.subnav2 a.linknav:hover {
 	background:  rgba(255,255,255,0.75);
