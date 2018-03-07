@@ -15,7 +15,7 @@ body {
 	"footer footer footer";
 	grid-column-gap: 15px;
 	grid-row-gap: 10px;
-	background: #ffeacc;
+	background: #fff3cc;
 }
 header {
 	grid-area: header;
