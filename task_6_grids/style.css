@@ -1,0 +1,193 @@
+@font-face {
+	font-family: "Arvo Regular";
+	src: url("fonts/ArvoRegular/ArvoRegular.eot");
+	src: url("fonts/ArvoRegular/ArvoRegular.eot?#iefix")format("embedded-opentype"),
+		url("fonts/ArvoRegular/ArvoRegular.woff") format("woff"),
+		url("fonts/ArvoRegular/ArvoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Noto Sans Regular";
+	src: url("fonts/NotoSansRegular/NotoSansRegular.eot");
+	src: url("fonts/NotoSansRegular/NotoSansRegular.eot?#iefix")format("embedded-opentype"),
+		url("fonts/NotoSansRegular/NotoSansRegular.woff") format("woff"),
+		url("fonts/NotoSansRegular/NotoSansRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@media (min-width: 576px) {
+	.title {
+		margin-bottom: 58.22px;
+	}
+	h1 {
+		line-height: 42.18px;
+	}
+	.section {
+		grid-row-gap: 10px;
+	}
+}
+@media (min-width: 768px) {
+	.title {
+		margin-bottom: 68.22px;
+	}
+	h1 {
+		line-height: 62.18px;
+	}
+	.section {
+		grid-row-gap: 15px;
+	}
+	h2 {
+		margin-top: 0.67em;
+		margin-bottom: 0.67em;
+	}
+	p {
+		margin-top: 0.67em;
+		margin-bottom: 0.67em;
+	}
+}
+@media (min-width: 992px) {
+	.title {
+		margin-bottom: 78.22px;
+	}
+	h1 {
+		line-height: 82.18px;
+	}
+	.section {
+		grid-row-gap: 20px;
+	}
+	h2 {
+		margin-top: 0.83em;
+		margin-bottom: 0.83em;
+	}
+	p {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+}
+@media (min-width: 1200px) {
+	.title {
+		margin-bottom: 78.22px;
+	}
+	h1 {
+		line-height: 82.18px;
+	}
+	.section {
+		grid-row-gap: 20px;
+	}
+	h2 {
+		margin-top: 0.83em;
+		margin-bottom: 0.83em;
+	}
+	p {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+}
+
+.title {
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	transform: scaleY(1.01);
+	font-family: "Arvo Regular";
+	font-size: 29.71px;
+	color: #3b3e6a;
+}
+.section {
+	display: grid;
+	align-content: start;
+	justify-content: center;
+	justify-items: center;
+}
+.img {
+	height: 147px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.img-1 {
+	grid-template-columns: [forklift-start] 36px [money-1-start] 1px [forklift-end] 47px [crane-start] 29px [money-1-end] 71px [crane-end];
+	grid-template-rows: [crane-start] 63px [money-1-start] 30px [forklift-start] 44px [crane-end] 1px [money-1-end] 2px [forklift-end];
+}
+#money-1 {
+	grid-column: money-1-start / money-1-end;
+	grid-row: money-1-start / money-1-end;
+}
+#forklift {
+	grid-column: forklift-start / forklift-end;
+	grid-row: forklift-start / forklift-end;
+}
+#crane {
+	grid-column: crane-start / crane-end;
+	grid-row: crane-start / crane-end;
+}
+.img-2 {
+	grid-template-columns: [case-start] 21px [money-2-start] 42px [money-2-end] 9px [calc-1-start] 34px [calc-1-end] 6px [case-end];
+	grid-template-rows: [case-start] 5px [calc-1-start] 58px [money-2-start] 12px [calc-1-end] 29px [money-2-end] 26px [case-end];
+}
+#case {
+	grid-column: case-start / case-end;
+	grid-row: case-start / case-end;
+}
+#calc-1 {
+	grid-column: calc-1-start / calc-1-end;
+	grid-row: calc-1-start / calc-1-end;
+}
+#money-2 {
+	grid-column: money-2-start / money-2-end;
+	grid-row: money-2-start / money-2-end;
+}
+.img-3 {
+	grid-template-columns: [money-3-start] 27px [bungalo-start] 36px [money-3-end] 98px [bungalo-end];
+	grid-template-rows: [bungalo-start] 58px [money-3-start] 61px [money-3-end bungalo-end];
+}
+#money-3 {
+	grid-column: money-3-start / money-3-end;
+	grid-row: money-3-start / money-3-end;
+}
+#bungalo {
+	grid-column: bungalo-start / bungalo-end;
+	grid-row: bungalo-start / bungalo-end;
+}
+.img-4 {
+	grid-template-columns: [umbrella-start] 22px [calc-2-start car-wash-start] 28px [calc-2-end] 1px [logo-start] 54px [logo-end] 11px [thunder-start] 17px [car-wash-end] 22px [umbrella-end] 16px [thunder-end];
+	grid-template-rows: [umbrella-start] 26px [logo-start thunder-start] 12px [logo-end] 40px [thunder-end calc-2-start car-wash-start] 52px [umbrella-end] 8px [calc-2-end] 9px [car-wash-end];
+}
+#umbrella {
+	grid-column: umbrella-start / umbrella-end;
+	grid-row: umbrella-start / umbrella-end;
+}
+#logo {
+	grid-column: logo-start / logo-end;
+	grid-row: logo-start / logo-end;
+}
+#thunder {
+	grid-column: thunder-start / thunder-end;
+	grid-row: thunder-start / thunder-end;
+}
+#car-wash {
+	grid-column: car-wash-start / car-wash-end;
+	grid-row: car-wash-start / car-wash-end;
+}
+#calc-2 {
+	grid-column: calc-2-start / calc-2-end;
+	grid-row: calc-2-start / calc-2-end;
+}
+h2 {
+	line-height: 30px;
+	text-align: center;
+	font-family: "Arvo Regular";
+	font-size: 22px;
+	color: #3b3e6a;
+}
+p {
+	line-height: 30px;
+	text-align: center;
+	font-family: "Noto Sans Regular";
+	font-size: 20px;
+	color: #686b8b;
+}

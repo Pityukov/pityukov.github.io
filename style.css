@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	min-height: 100vh;
+	display: grid;
+	align-content: center;
+	justify-items: center;
+	grid-template-rows: 100px 1fr 100px;
+	grid-template-columns: 100px 1fr 100px;
+	grid-template-areas:
+	". . ."
+	". content ."
+	". . .";
+	font-family: "Book Antiqua", palatino, serif;
+	font-style: italic;
+}
+.content {
+	width: 100%;
+	grid-area: content;
+	text-align: center;
+}
+hr {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	height: 2px;	
+	background: #50abb3;
+	border: none;	
+}
+h1 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;	
+	color: #408890;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: bold;
+	color: #4386b3;
+}
+a:hover, a:focus {
+	text-decoration: underline;
+}
