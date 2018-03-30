@@ -28,6 +28,14 @@
 	.section {
 		grid-row-gap: 10px;
 	}
+	h2 {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	p {
+		margin-top: 0.67em;
+		margin-bottom: 0.67em;
+	}
 }
 @media (min-width: 768px) {
 	.title {
@@ -44,8 +52,8 @@
 		margin-bottom: 0.67em;
 	}
 	p {
-		margin-top: 0.67em;
-		margin-bottom: 0.67em;
+		margin-top: 0.83em;
+		margin-bottom: 0.83em;
 	}
 }
 @media (min-width: 992px) {
